@@ -1,0 +1,123 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100vw;
+    height: 100px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+}
+
+.container {
+    padding-top: 20px;
+    max-width: 1460px;
+    margin: 0 auto;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.menu {
+    display: flex;
+    gap: 0 52px;
+}
+
+.menu__link {
+    font-family: $main_text;
+    color: white;
+    padding: 20px;
+
+    transition: background-color 0.3s ease;
+
+}
+
+.menu__link:hover {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px 19px;
+    border: 1px solid $light_gray;
+
+}
+
+.nav_button button {
+    font-family: $main_text;
+    color: $white;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 1px solid $light_gray;
+    cursor: pointer;
+}
+
+.nav_button button:hover {
+    background-color: $red_accent;
+    border: none;
+}
+
+.burger_menu {
+    display: none;
+}
+
+
+
+
+@media (max-width: 1001px) {
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .burger_menu {
+        display: flex;
+        height: 100%;
+        order: -1;
+    }
+
+    .burger_nav {
+        position: fixed;
+        top: 0px;
+        left: -50%;
+        background-color: $dark_gray;
+        width: 30%;
+        height: 100%;
+        padding-left: 30px;
+
+    }
+
+    .burger_nav ul {
+        font-size: 20px;
+        padding: 15px;
+        border-bottom: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+        transition: all 1s ease;
+        padding-top: 30px;
+        color: white;
+        font-weight: 600;
+    }
+
+
+
+    .burger_img:hover+.burger_nav,
+    .burger_nav:hover {
+        left: 0;
+    }
+}
