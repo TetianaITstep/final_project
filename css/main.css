@@ -100,15 +100,16 @@ body {
     position: fixed;
     top: 0px;
     left: -50%;
-    background-color: #262626;
+    background: linear-gradient(rgba(0, 0, 0, 0.791), rgba(86, 1, 1, 0.797));
     width: 30%;
     height: 100%;
     padding-left: 30px;
+    padding-top: 30px;
+    border: 1px solid white;
   }
   .burger_nav ul {
     font-size: 20px;
     padding: 15px;
-    border-bottom: 1px solid white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -117,6 +118,10 @@ body {
     padding-top: 30px;
     color: white;
     font-weight: 600;
+  }
+  .burger_nav ul li {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
   }
   .burger_img:hover + .burger_nav,
   .burger_nav:hover {
