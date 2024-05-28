@@ -5,3 +5,18 @@
     color: transparent;
     background-image: linear-gradient(to right, #fffff7, #727267);
 }
+
+%button {
+    font-family: $main_text;
+    color: $white;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 1px solid $light_gray;
+    cursor: pointer;
+}
+
+%button_hover {
+    background-color: $red_accent;
+    border: none;
+}

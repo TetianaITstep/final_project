@@ -1,0 +1,106 @@
+.clients {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+
+.section_button {
+    @extend %button;
+}
+
+.section_button:hover {
+    @extend %button_hover;
+}
+
+
+.modal {
+    position: fixed;
+    display: flex;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.611);
+    padding: 30px;
+    overflow-y: auto;
+    display: none;
+    z-index: 100;
+}
+
+.modal_main {
+    cursor: default;
+    position: relative;
+    max-width: 600px;
+    background-color: white;
+    margin: auto;
+    color: black;
+    border-radius: 18px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_title {
+    font-size: 20px;
+    font-family: $main_text;
+}
+
+.modal_close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    outline: 1px solid transparent;
+    outline-offset: 3px;
+    transition: outline-color .15s ease-in-out;
+    padding: 0;
+    text-align: center;
+    border-radius: 2px;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.modal_close:focus-visible {
+    outline-color: green;
+}
+
+.combined_form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"] {
+    width: 400px;
+    padding: 15px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+
+}
+
+input[type="email"]::placeholder {
+    color: #999;
+}
+
+input[type="email"]:focus,
+.write_smth_form:focus {
+    border-color: $dark_gray;
+    outline: none;
+}
+
+.button_submit_div {
+    margin-top: 20px;
+    background-color: $red_accent;
+    padding: 15px 20px;
+    color: $white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}

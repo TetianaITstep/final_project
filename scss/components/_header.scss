@@ -53,18 +53,11 @@ body {
 }
 
 .nav_button button {
-    font-family: $main_text;
-    color: $white;
-    background-color: transparent;
-    border-radius: 20px;
-    padding: 10px 20px;
-    border: 1px solid $light_gray;
-    cursor: pointer;
+    @extend %button
 }
 
 .nav_button button:hover {
-    background-color: $red_accent;
-    border: none;
+    @extend %button_hover;
 }
 
 .burger_menu {
