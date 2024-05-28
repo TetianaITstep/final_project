@@ -100,8 +100,7 @@ body {
     position: fixed;
     top: 0px;
     left: -50%;
-    background: linear-gradient(rgba(0, 0, 0, 0.791), rgba(86, 1, 1, 0.797));
-    width: 30%;
+    background: linear-gradient(rgba(0, 0, 0, 0.84), rgba(54, 0, 0, 0.903));
     height: 100%;
     padding-left: 30px;
     padding-top: 30px;
