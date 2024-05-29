@@ -7,7 +7,7 @@
 }
 
 %button {
-    font-family: $main_text;
+    font-family: $titles;
     color: $white;
     background-color: transparent;
     border-radius: 20px;
@@ -19,4 +19,24 @@
 %button_hover {
     background-color: $red_accent;
     border: none;
+}
+
+%icon_introducing {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: $yellow_accent;
+    font-weight: 300;
+}
+
+%center_position {
+    width: 80%;
+    margin: 0 auto;
+}
+
+%font_family_color_main {
+    color: $light_gray;
+    font-size: 18px;
+    font-family: "Inter Tight", sans-serif;
 }

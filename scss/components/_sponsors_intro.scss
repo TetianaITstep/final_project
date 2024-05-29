@@ -1,0 +1,86 @@
+.sponsors {
+    @extend %center_position;
+}
+
+.sponsors_info p {
+    font-family: $main_text;
+    font-weight: 300;
+    color: $light_gray;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+.sponsors_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsors_list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.introducing {
+    @extend %center_position;
+
+}
+
+.introducing_main_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_introducing {
+    @extend %icon_introducing;
+}
+
+.introducing_title {
+    font-size: 18px;
+    color: $yellow_accent;
+    font-family: $main_text;
+
+}
+
+.introducing_text {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: $light_gray;
+    font-family: $titles;
+}
+
+.accent_gray {
+    text-align: center;
+    font-size: 40px;
+    color: $very_light_gray;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+
+
+    .sponsors_info p {
+        font-size: 15px;
+
+    }
+
+    .sponsors_list a img {
+        width: 60px;
+    }
+}

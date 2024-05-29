@@ -1,0 +1,160 @@
+.services {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 96px;
+}
+
+.introducing_text_services {
+    @extend %gradient_text;
+    font-size: 44px;
+    padding-top: 20px;
+}
+
+.services_pictures_info {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service_rectungle {
+    width: 300px;
+    height: 280px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.8));
+    position: relative;
+    border: 1px solid $light_gray;
+    align-self: center;
+    cursor: pointer;
+
+}
+
+
+.service_rectungle_pic {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service_rectungle_info {
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.service_rectungle_title {
+    font-family: $titles;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.service_rectungle_descr {
+    font-family: $main_text;
+    font-size: 15px;
+    color: $light_gray;
+}
+
+.service_rectungle_pic_2 {
+    position: absolute;
+    top: 12px;
+    left: 212px;
+    transform: translateX(-50%);
+}
+
+.service_rectungle_pic_3 {
+    position: absolute;
+    top: 40px;
+    left: 200px;
+    transform: translateX(-50%);
+}
+
+
+
+@media (max-width: 1100px) {
+    .introducing_text {
+
+        font-size: 24px;
+
+    }
+
+    .introducing_text_services {
+
+        font-size: 24px;
+
+    }
+
+    .accent_gray {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .introducing_text {
+
+        font-size: 20px;
+
+    }
+
+    .introducing_text_services {
+
+        font-size: 20px;
+
+    }
+
+    .accent_gray {
+        font-size: 20px;
+    }
+
+    .services {
+
+        margin-top: 30px;
+    }
+
+
+}
+
+@media (max-width: 520px) {
+    .introducing_text {
+
+        font-size: 16px;
+
+    }
+
+    .introducing_text_services {
+
+        font-size: 13px;
+
+    }
+
+    .accent_gray {
+        font-size: 16px;
+    }
+
+    .services {
+        width: 90%;
+
+    }
+
+
+
+
+}
+
+@media (max-width: 400px) {
+    .service_rectungle_pic_2 {
+
+        left: 200px;
+    }
+
+
+}
