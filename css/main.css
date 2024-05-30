@@ -128,7 +128,7 @@ body {
     border: 1px solid white;
   }
   .burger_nav ul {
-    font-size: 20px;
+    font-size: 13px;
     padding: 15px;
     display: flex;
     flex-direction: column;
