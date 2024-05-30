@@ -1006,6 +1006,33 @@ input[type=email]:focus,
     top: 43%;
     left: 40%;
   }
+  .modal_main {
+    cursor: default;
+    position: relative;
+    width: 300px;
+    background-color: white;
+    margin: auto;
+    color: black;
+    border-radius: 18px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal_title {
+    font-size: 18px;
+    font-family: "Inter Tight", sans-serif;
+  }
+  input[type=email] {
+    width: 250px;
+    padding: 15px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+  }
 }
 @media (max-width: 550px) {
   .clients_info_text {
