@@ -143,6 +143,9 @@ body {
     border-bottom: 1px solid white;
     padding-bottom: 5px;
   }
+  .burger_nav ul li a {
+    color: white;
+  }
   .burger_img:hover + .burger_nav,
   .burger_nav:hover {
     left: 0;
