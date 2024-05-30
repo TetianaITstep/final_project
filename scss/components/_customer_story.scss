@@ -140,12 +140,7 @@ input[type="email"]:focus,
 
 }
 
-// .client_video_plus_img {
-//     position: absolute;
-//     top: 55%;
-//     left: 48%;
 
-// }
 .client_video_plus {
     position: absolute;
     top: 50%;
@@ -202,6 +197,7 @@ input[type="email"]:focus,
     justify-content: center;
     gap: 20px;
     margin-top: 150px;
+
 }
 
 .statistic_numbers_items {
@@ -229,6 +225,23 @@ input[type="email"]:focus,
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.customers_feedback {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1300px) {
 
     .clients_info_text {
@@ -239,6 +252,12 @@ input[type="email"]:focus,
 }
 
 @media (max-width: 1050px) {
+
+
+    .statistic_numbers {
+        display: none;
+    }
+
     .clients {
         padding-bottom: 10px;
     }
@@ -272,14 +291,19 @@ input[type="email"]:focus,
 
     }
 
+    // .clients_feedback {
+    //     display: none;
+    // }
     .clients_feedback {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         justify-content: center;
-        gap: 50px;
-        margin-top: 50px;
+        gap: 100px;
+        margin-top: 150px;
+
     }
+
 }
 
 @media (max-width: 620px) {
@@ -295,9 +319,7 @@ input[type="email"]:focus,
 
     }
 
-    .statistic_numbers {
-        display: none;
-    }
+
 }
 
 @media (max-width: 550px) {
