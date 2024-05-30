@@ -1024,7 +1024,7 @@ input[type=email]:focus,
 }
 @media (max-width: 620px) {
   .client_video_img_background {
-    width: 350px;
+    width: 300px;
   }
   .client_video_plus {
     top: 43%;
