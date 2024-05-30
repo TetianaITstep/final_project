@@ -441,10 +441,26 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.introducing_text::-moz-selection {
+  color: #fffb00;
+}
+
+.introducing_text::selection {
+  color: #fffb00;
+}
+
 .accent_gray {
   text-align: center;
   font-size: 40px;
   color: #CCCCCC;
+}
+
+.accent_gray::-moz-selection {
+  color: #fffb00;
+}
+
+.accent_gray::selection {
+  color: #fffb00;
 }
 
 @media (max-width: 700px) {
@@ -871,6 +887,14 @@ input[type=email]:focus,
   text-align: left;
   padding-top: 20px;
   font-size: 38px;
+}
+
+.clients_info_text::-moz-selection {
+  color: #fffb00;
+}
+
+.clients_info_text::selection {
+  color: #fffb00;
 }
 
 .client_video {

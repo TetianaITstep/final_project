@@ -127,6 +127,11 @@ input[type="email"]:focus,
     font-size: 38px;
 }
 
+.clients_info_text::selection {
+    color: #fffb00;
+}
+
+
 .client_video {
     display: flex;
     justify-content: center;
